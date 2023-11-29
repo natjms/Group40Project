@@ -15,7 +15,7 @@
         app:srcCompat="@drawable/map" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_map1"
         android:layout_width="108dp"
         android:layout_height="113dp"
         android:layout_marginStart="181dp"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_map2"
         android:layout_width="94dp"
         android:layout_height="107dp"
         android:layout_marginStart="135dp"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button_map3"
         android:layout_width="101dp"
         android:layout_height="108dp"
         android:layout_marginStart="167dp"
