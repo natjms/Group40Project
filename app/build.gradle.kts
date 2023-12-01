@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "group.fortytwo.ratemylandlord"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "group.fortytwo.ratemylandlord"
