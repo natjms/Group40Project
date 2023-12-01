@@ -23,6 +23,7 @@
         android:id="@+id/input_search"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:completionThreshold="3"
         android:drawableRight="@drawable/baseline_search_24"
         android:hint="123 Address Road..."
         app:layout_constraintBottom_toBottomOf="parent"
