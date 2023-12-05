@@ -13,6 +13,12 @@
         android:theme="@style/Theme.RateMyLandlord"
         tools:targetApi="31">
         <activity
+            android:name=".TenantSummary"
+            android:exported="false" />
+        <activity
+            android:name=".LandlordSummary"
+            android:exported="false" />
+        <activity
             android:name=".Verification"
             android:exported="false" />
         <activity
