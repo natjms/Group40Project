@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".TenantSummary">
 
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Welcome to Rate-a-Landlord!"/>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/display"
+        app:layout_constraintTop_toBottomOf="@id/headline"
+        android:text="Name\nDOB\nAddress\n"
+        android:gravity="right"
+        />
+
+
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headline"
+        android:text="John Doe\nJan 11 2001\n123 Somewhere, Kelowna, BC"
+        android:gravity="left"
+        />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
