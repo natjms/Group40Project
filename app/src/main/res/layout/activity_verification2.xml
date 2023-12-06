@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Verify your identity"
+        android:text="Proof of ownership"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,9 +21,9 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="276dp"
-        android:layout_height="122dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="To verify your identity, we need a copy of any documentation proving you own the properties you're claiming to represent. Press the button below to compose an email to our Account Verification Team"
+        android:text="Before you can start using Rate My Landlord, you need to prove you own or can act on behalf of the properties you're registering to represent. Press the button below and you will be taken to your email client where you can send the necessary documentation to our Account Verification Team"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -40,5 +40,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="To prove you own or can act on behalf of those who own the properties, we will need photo identification (drivers license, passport, government ID, etc.) along with the property deed or a signed lease agreement consistent with the information you provided us"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
