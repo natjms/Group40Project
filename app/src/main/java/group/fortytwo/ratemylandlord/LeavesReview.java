@@ -18,6 +18,7 @@ public class LeavesReview extends AppCompatActivity {
     String review_text;
     float star_count;
     Button button_submit_review;
+    Button button_review_cancel;
     RatingBar rating_bar;
     TextInputEditText text_review_body;
 
@@ -30,6 +31,12 @@ public class LeavesReview extends AppCompatActivity {
 
         text_review_body = (TextInputEditText) findViewById(R.id.text_review_body);
         rating_bar = (RatingBar) findViewById(R.id.rating_bar);
+
+        button_review_cancel = (Button) findViewById(R.id.button_cancel_review);
+        button_review_cancel.setOnClickListener(view -> {
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        });
 
         button_submit_review = (Button) findViewById(R.id.button_submit_review);
         button_submit_review.setOnClickListener(view -> {
