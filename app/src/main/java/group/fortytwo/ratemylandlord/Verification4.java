@@ -18,19 +18,28 @@ public class Verification4 extends AppCompatActivity {
 
         Intent intent = getIntent();
 
+        boolean rejected = intent.getBooleanExtra("reject", false);
+
         text_confirm_header = (TextView) findViewById(R.id.text_confirm_header);
         text_confirm_body = (TextView) findViewById(R.id.text_confirm_body);
         button_finish_verification = (Button) findViewById(R.id.button_finish_verification);
 
         button_finish_verification.setOnClickListener(view -> {
-            Intent mainIntent = new Intent(this, MainActivity.class);
-            startActivity(mainIntent);
-            finish();
+            if (rejected) {
+                Intent verificationIntent = new Intent(this, Verification2.class);
+                startActivity(verificationIntent);
+                finish();
+            } else {
+                Intent mainIntent = new Intent(this, MainActivity.class);
+                startActivity(mainIntent);
+                finish();
+            }
         });
 
-        if (intent.getBooleanExtra("reject", false)) {
+        if (rejected) {
             text_confirm_header.setText("Your application was rejected");
             text_confirm_body.setText("Unfortunately, your application could not be accepted. Try again, ensuring you upload clear documentation proving you own the properties you're seeking to represent");
+            button_finish_verification.setText("Retry");
         }
     }
 }
